@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+}
+.sidebar{
+    position: absolute;
+    background-color: rgb(187, 176, 176);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar li{
+    list-style: none;
+    font-size: 23px;
+    padding: 33px 0; 
+}
+.sidebar li a{
+    text-decoration: none;
+    color:black;
+}
+.main{
+    /*background-color: yellow;*/
+    width: 90vw;
+}
+.container{
+    display:flex
+}
+.infoContainer{
+    /*background-color: rgb(202,9,128);*/
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display:flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+}
+.devPic img{
+    height: 58vh;
+     
+}
+.hello{
+    font-size:65px ;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about{
+    font-size: 30px;
+}
+.buttons{
+    margin-top: 34px;
+}
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color:white;
+    background-color: darkturquoise;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer  ;
+}
+.buttons button:hover{
+    color:darkturquoise;
+    background-color: white;
+
+}
+.contactform{
+    padding-top: 144 px ;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 88px;
+}
+.contactform h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.contactform form div{
+    padding:10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 16vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding:3px;
+
+}
+#emailHelp{
+    font-size:8px;
+    color: midnightblue;
+    margin:0 5px;
+
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width:24px;
+    margin: 3px 0;
+}
+.btn-primary{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color:white;
+    background-color: darkturquoise;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 3px;
+    cursor: pointer  ;
+}
+.btn-primary:hover{
+    color:darkturquoise;
+    background-color: white;
+}
+.blogcontainer{
+    margin:10px 88px;
+}
+.blogItem{
+    margin:20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.blogContainer h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 23px;
+}
+.blogItem p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.info{
+    margin:10px 85px;
+}
+.intro h2{
+    font-family: 'Times New Roman', Times, serif;
+    margin:12px;
+}
+.intro p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 12px;
+}
+.skillcontainer{
+    padding: 12px;
+}
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.skill{
+    width: 265px;
+    height:6px;
+    background-color: red;
+    border: 2px solid black;
+}
+@media(max-width:720px){
+    .devPic{
+        display:none;
+    }
+    .buttons{
+        font-size:10px;
+
+    }
+    .devInfo{
+        font-size: 6px;
+    }
+    .into,.blogcontainer,.contactform{
+        margin:50px 8px;
+    }
+
+}
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position:absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left:10px;
+    margin-top: 10px;
+
+}
+.cross{
+    margin-left: 155px;
+}
